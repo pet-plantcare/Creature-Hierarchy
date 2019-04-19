@@ -1,0 +1,11 @@
+package creature;
+
+public class Bird
+{
+   String gender;
+   
+   public Bird()
+   {
+      gender = "N/A";
+   }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
+  <project autorefresh="false" build="classes/" main="" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="creature/Animal.java" package="creature" timestamp="17-Apr-2019 11:46:25">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Creature.java" package="creature" timestamp="17-Apr-2019 11:31:44">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Plant.java" package="creature" timestamp="17-Apr-2019 11:37:56">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Mammal.java" package="creature" timestamp="17-Apr-2019 11:40:29">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Dog.java" package="creature" timestamp="17-Apr-2019 11:44:05">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Bird.java" package="creature" timestamp="17-Apr-2019 11:44:14">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/Cat.java" package="creature" timestamp="17-Apr-2019 11:46:28">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="creature/SamplePlant.java" package="creature" timestamp="17-Apr-2019 11:46:32">
+        <select from="104" to="104"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

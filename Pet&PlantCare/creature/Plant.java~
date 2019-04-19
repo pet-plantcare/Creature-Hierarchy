@@ -1,0 +1,22 @@
+public abstract class Plant extends Creature {
+   
+   //properties
+   private int height;
+   private String species;
+   
+   public Plant(
+   //methods
+   public int getHeight() {
+      return height;
+   }
+   
+   public void setHeight( int height)
+   {
+      
+   }
+   
+   
+   
+   
+   
+}
