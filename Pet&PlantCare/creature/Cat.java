@@ -11,6 +11,8 @@ public class Cat extends Mammal
       addTask( this, AnimalTask.HYGIENE);
       addTask( this, AnimalTask.NAILS);
       addTask( this, AnimalTask.WATER_ANIMAL);
+      
+      //for custiomized tasks
       addTask( this, AnimalTask.CUSTOM_ANIMAL);
    }
 }
