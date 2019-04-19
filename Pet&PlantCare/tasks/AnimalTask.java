@@ -2,11 +2,11 @@
 
 /**
  * creates tasks related to animals
- * @author Onur Oruç
+ * @author Onur OruÃ§
  * @date 19.04.2019
  */
 
-public class AnimalTask {
+public class AnimalTask extends Task {
    
    //properties
    public static final int CUSTOM_ANIMAL  = -1;
