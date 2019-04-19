@@ -2,5 +2,8 @@ package creature;
 
 public class Cat extends Mammal
 {
-   super();
+   public Cat ()
+   {
+      super();
+   }
 }
