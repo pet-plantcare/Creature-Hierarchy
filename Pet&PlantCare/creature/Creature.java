@@ -43,5 +43,10 @@ public abstract  class Creature
       return notes;
    }
    
+   //   public void addTask(int taskType)
+//   {
+//      tasks.add(new Task(taskType));
+//   }
+   
    
 }
