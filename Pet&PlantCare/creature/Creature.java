@@ -7,7 +7,7 @@ public abstract  class Creature
    String name;
    int age;
    String notes;
-   //protected ArrayList<Task> tasks;
+   protected ArrayList<Task> tasks;
    
    public Creature()
    {
@@ -15,6 +15,7 @@ public abstract  class Creature
       age = 0;
       notes = "";
       no++;
+      tasks = new ArrayList<Task>();
    }
    
    //methods
