@@ -13,13 +13,13 @@ public class Bird extends Animal
    {
       super();
       gender = "N/A";
-      addTask( this, FOOD);
-      addTask( this, VACCINATION);
-      addTask( this, MEDICATION);
-      addTask( this, HYGIENE);
-      addTask( this, NAILS);
-      addTask( this, WATER_ANIMAL);
-      addTask( this, CUSTOM_ANIMAL);
+      addTask( this, AnimalTask.FOOD);
+      addTask( this, AnimalTask.VACCINATION);
+      addTask( this, AnimalTask.MEDICATION);
+      addTask( this, AnimalTask.HYGIENE);
+      addTask( this, AnimalTask.NAILS);
+      addTask( this, AnimalTask.WATER_ANIMAL);
+      addTask( this, AnimalTask.CUSTOM_ANIMAL);
    }
    
    public void setGender(String gender)
