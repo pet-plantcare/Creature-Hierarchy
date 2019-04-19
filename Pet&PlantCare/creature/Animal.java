@@ -5,4 +5,10 @@ public abstract class Animal extends Creature
    {
       super();
    }
+   
+   //methods
+   @Override
+   public abstract void addTask(int taskType) {
+      
+   }
 }
