@@ -1,0 +1,12 @@
+package tasks;
+
+public abstract class Task
+{
+   Creature creature;
+   int taskType;
+   public Task(Creature creature, int taskType)
+   {
+      this.creature = creature;
+      this.taskType = taskType;
+   }
+}
