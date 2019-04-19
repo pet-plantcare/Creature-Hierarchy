@@ -18,7 +18,7 @@ public abstract class Plant extends Creature {
     * adds new tasks to plant.
     * @param taskType, sign of the task that will be added.
     */ 
-   public abstract void addTask( int taskType) {
+   public void addTask( int taskType) {
       Task newTask = new Task(this, taskType);
       tasks.add( newTask);
    }
@@ -27,18 +27,15 @@ public abstract class Plant extends Creature {
       return height;
    }
    
-   public void setHeight( int height)
-   {
+   public void setHeight( int height) {
       this.height = height;
    }
    
-   public void setSpecies(String species)
-   {
+   public void setSpecies(String species) {
       this.species = species;
    }
    
-   public String getSpecies()
-   {
+   public String getSpecies() {
       return species;
    }
    
