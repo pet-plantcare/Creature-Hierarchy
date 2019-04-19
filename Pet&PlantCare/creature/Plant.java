@@ -5,6 +5,7 @@ public abstract class Plant extends Creature {
    private int height;
    private String species;
    
+   //constructor
    public Plant()
    {
       super();
@@ -12,6 +13,11 @@ public abstract class Plant extends Creature {
       species = "N/A";
    }
    //methods
+   @Override
+   public abstract void addTask(int taskType) {
+      
+   }
+   
    public int getHeight() {
       return height;
    }
