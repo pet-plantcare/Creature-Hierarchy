@@ -16,6 +16,7 @@ public class AnimalTask extends Task {
    public static final int HYGIENE        = 3;
    public static final int NAILS          = 4;
    public static final int WATER_ANIMAL   = 5;
+   public static final int WALKING        = 6;
    
    
    //constructor
