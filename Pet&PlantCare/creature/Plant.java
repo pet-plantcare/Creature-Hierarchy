@@ -14,6 +14,10 @@ public abstract class Plant extends Creature {
    }
    //methods
    @Override
+   /**
+    * adds new tasks to plant.
+    * @param taskType, sign of the task that will be added.
+    */ 
    public abstract void addTask( int taskType) {
       Task newTask = new Task(this, taskType);
       tasks.add( newTask);
