@@ -7,7 +7,7 @@ public abstract  class Creature
    String name;
    int age;
    String notes;
-   //ArrayList<Task> tasks;
+   //protected ArrayList<Task> tasks;
    
    public Creature()
    {
@@ -43,10 +43,6 @@ public abstract  class Creature
       return notes;
    }
    
-   //   public void addTask(int taskType)
-//   {
-//      tasks.add(new Task(taskType));
-//   }
-   
-   
+   public abstract void addTask(int taskType);
+      
 }
