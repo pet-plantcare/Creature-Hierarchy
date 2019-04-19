@@ -8,7 +8,8 @@ public abstract class Animal extends Creature
    
    //methods
    @Override
-   public abstract void addTask(int taskType) {
-      
+   public abstract void addTask( int taskType) {
+      Task newTask = new Task(this, taskType);
+      tasks.add( newTask);
    }
 }
