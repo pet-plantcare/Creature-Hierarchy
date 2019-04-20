@@ -16,6 +16,7 @@ public class Fish  extends Animal
       //for costomized tasks
       addTask( AnimalTask.CUSTOM_ANIMAL);
       
+      fishes.add( this);
    }
    
    public void setSpecies( String species)
