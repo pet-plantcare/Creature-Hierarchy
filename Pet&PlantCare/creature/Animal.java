@@ -1,10 +1,23 @@
 package creature;
 import tasks.*;
+import java.util.*;
+
 public abstract class Animal extends Creature
 {
+   //properties
+   protected ArrayList<Dog> dogs;
+   protected ArrayList<Cat> cats;
+   protected ArrayList<Fish> fishes;
+   protected ArrayList<Bird> birds;
+   
    public Animal()
    {
       super();
+      
+      dogs = new ArrayList<Dog>();
+      cats = new ArrayList<Cat>();
+      fishes = new ArrayList<Fish>();
+      birds = new ArrayList<Bird>();    
    }
    
    //methods
