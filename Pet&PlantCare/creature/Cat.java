@@ -14,7 +14,5 @@ public class Cat extends Mammal
       
       //for custiomized tasks
       addTask( AnimalTask.CUSTOM_ANIMAL);
-   
-      cats.add(this);
    }
 }
