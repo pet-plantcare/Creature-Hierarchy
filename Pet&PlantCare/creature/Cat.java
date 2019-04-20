@@ -1,5 +1,5 @@
 package creature;
-
+import tasks.*;
 public class Cat extends Mammal
 {
    public Cat()
