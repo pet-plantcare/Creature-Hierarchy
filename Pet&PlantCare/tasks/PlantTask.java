@@ -13,6 +13,10 @@ public class PlantTask extends Task
    //constructor
    PlantTask()
    {
+      public PlantTask(Creature creature, int taskType) //bundan da emin değilim... 
+      {
+         super( creature , taskType );
+      }
    }
    
    //methods
