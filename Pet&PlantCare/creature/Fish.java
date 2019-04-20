@@ -1,4 +1,5 @@
 package creature;
+import tasks.*;
 public class Fish  extends Animal
 {
    String species;
