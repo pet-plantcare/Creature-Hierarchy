@@ -20,7 +20,10 @@ public class AnimalTask extends Task {
    public static final int WATER_CLEANING = 7;
    
    //constructor
-   
+   public AnimalTask(Creature creature , int taskType) //bundan pek emin değilim... :D ama şimdilik compile oldu
+   {
+      super( creature , taskType );
+   }   
    
    //methods
 
