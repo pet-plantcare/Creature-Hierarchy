@@ -1,4 +1,5 @@
 package creature;
+import tasks.*;
 import java.util.ArrayList;
 //import tasks.*;
 public abstract  class Creature
