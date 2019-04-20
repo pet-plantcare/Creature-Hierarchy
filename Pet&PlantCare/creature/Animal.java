@@ -1,4 +1,5 @@
 package creature;
+import tasks.*;
 public abstract class Animal extends Creature
 {
    public Animal()
