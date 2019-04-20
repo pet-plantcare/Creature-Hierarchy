@@ -14,7 +14,5 @@ public class Dog extends Mammal
       
       //for customized tasks
       addTask( AnimalTask.CUSTOM_ANIMAL);
-      
-      dogs.add( this);
    }
 }
