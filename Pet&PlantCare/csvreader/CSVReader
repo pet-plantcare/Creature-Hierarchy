@@ -1,0 +1,27 @@
+package csvreader;
+
+import creature.*;
+import tasks.*;
+import java.io.*;
+
+/**
+ * this class reads csv file. IN PROGRESS!!!!!
+ * @author ece unal
+ * @date 20.04.2019
+ */
+
+public class CSVReader
+{
+   
+   public static void main ( String[] args )
+   {
+      try 
+      {
+        FileWriter fw = new FileWriter( "C:/Users/User/Desktop/Pet&Plant Care/csvreader/petplant.csv" ); 
+      }  catch (IOException io) 
+      {
+          io.printStackTrace();
+      }
+   }
+}
+   
