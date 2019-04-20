@@ -13,7 +13,7 @@ public abstract class Animal extends Creature
     * @param taskType, sign of the task that will be added.
     */ 
    public void addTask( int taskType) {
-      Task newTask = new Task( this, taskType);
+      Task newTask = new AnimalTask( this, taskType);
       tasks.add( newTask);
    }
 }
