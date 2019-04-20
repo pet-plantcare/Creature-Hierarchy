@@ -18,9 +18,12 @@ public abstract class Plant extends Creature {
     * adds new tasks to plant.
     * @param taskType, sign of the task that will be added.
     */ 
-   public void addTask( int taskType) {
-      Task newTask = new Task(this, taskType);
+   public void addTask( int taskType) { //INSTANTIATING TO PLANTTASK SINCE ABSTRACT CLASSES CAN NOT BE INSTANTIATED!!
+      Task newTask = new PlantTask(this, taskType);
       tasks.add( newTask);
+      //Task newTask = new Task(this, taskType);
+      //tasks.add( newTask); 
+      
    }
    
    public int getHeight() {
