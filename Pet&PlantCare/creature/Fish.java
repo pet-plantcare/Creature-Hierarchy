@@ -7,11 +7,11 @@ public class Fish  extends Animal
    { 
       super();
       species = "N/A";
-      addTask( this,AnimalTask.FOOD);
-      addTask( this,AnimalTask.VACCINATION);
-      addTask( this,AnimalTask.MEDICATION);
-      addTask( this,AnimalTask.HYGIENE);
-      addTask( this,AnimalTask.WATER_CLEANING);
+      addTask( AnimalTask.FOOD);
+      addTask( AnimalTask.VACCINATION);
+      addTask( AnimalTask.MEDICATION);
+      addTask( AnimalTask.HYGIENE);
+      addTask( AnimalTask.WATER_CLEANING);
       
       
       
