@@ -10,9 +10,8 @@ public class Dog extends Mammal
       addTask( this,AnimalTask.MEDICATION);
       addTask( this,AnimalTask.HYGIENE);
       addTask( this,AnimalTask.NAILS);
-      addTask( this,AnimalTask.WATER_ANIMAL);
+      addTask( this,AnimalTask.WATER_ANIMAL);   
       
-      //for customized tasks
-      addTask( this,AnimalTask.CUSTOM_ANIMAL);
    }
+   
 }
