@@ -28,11 +28,7 @@ public class Fish  extends Animal
       return species;
    }
    
-   public void createCustomTask()
-   {
-   //for costomized tasks
-      addTask( this,AnimalTask.CUSTOM_ANIMAL);
-   }
+   
    
    
    
