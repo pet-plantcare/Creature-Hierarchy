@@ -46,5 +46,10 @@ public abstract  class Creature
    }
    
    public abstract void addTask(int taskType);
+   
+   public ArrayList<Task> getTasks()
+   {
+      return tasks;  
+   }
       
 }
