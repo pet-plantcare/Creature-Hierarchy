@@ -5,9 +5,9 @@ public class SamplePlant extends Plant
    public SamplePlant()
    {
       super();
-      addTask( PlantTask.WATER);
-      addTask( PlantTask.FERTILIZATION);
-      addTask( PlantTask.PRUNNING);
-      addTask( PlantTask.CUSTOM);   
+      addTask( this,PlantTask.WATER);
+      addTask( this,PlantTask.FERTILIZATION);
+      addTask( this,PlantTask.PRUNNING);
+      addTask( this,PlantTask.CUSTOM);   
    }
 }
