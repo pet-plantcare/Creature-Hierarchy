@@ -13,6 +13,6 @@ public class Dog extends Mammal
       addTask( this,AnimalTask.WATER_ANIMAL);
       
       //for customized tasks
-      addTask( AnimalTask.CUSTOM_ANIMAL);
+      addTask( this,AnimalTask.CUSTOM_ANIMAL);
    }
 }
