@@ -8,6 +8,11 @@ public class SamplePlant extends Plant
       addTask( this,PlantTask.WATER);
       addTask( this,PlantTask.FERTILIZATION);
       addTask( this,PlantTask.PRUNNING);
-      addTask( this,PlantTask.CUSTOM);   
+       
+   }
+   
+   public void createCustomTask()
+   {
+      addTask( this,PlantTask.CUSTOM);  
    }
 }
