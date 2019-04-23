@@ -13,8 +13,7 @@ public class Fish  extends Animal
       addTask( this,AnimalTask.HYGIENE);
       addTask( this,AnimalTask.WATER_CLEANING);
       
-      //for costomized tasks
-      addTask( this,AnimalTask.CUSTOM_ANIMAL);
+      
       
    }
    
@@ -27,6 +26,12 @@ public class Fish  extends Animal
    public String getSpecies()
    {
       return species;
+   }
+   
+   public void createCustomTask()
+   {
+   //for costomized tasks
+      addTask( this,AnimalTask.CUSTOM_ANIMAL);
    }
    
    
