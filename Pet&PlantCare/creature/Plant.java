@@ -26,6 +26,11 @@ public abstract class Plant extends Creature {
       
    }
    
+   public void createCustomTask()
+   {
+      addTask( PlantTask.CUSTOM);  
+   }
+   
    public int getHeight() {
       return height;
    }
