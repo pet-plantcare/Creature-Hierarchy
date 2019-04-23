@@ -22,7 +22,7 @@ public class Bird extends Animal
       addTask( this,AnimalTask.WATER_ANIMAL);
       
       //for customized tasks
-      addTask( AnimalTask.CUSTOM_ANIMAL);
+      addTask( this,AnimalTask.CUSTOM_ANIMAL);
    }
    
    public void setGender(String gender)
