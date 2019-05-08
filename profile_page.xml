@@ -21,14 +21,14 @@
 
             <ImageView
                 android:id="@+id/profile_image_view"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:contentDescription="@android:string/untitled"
                 tools:srcCompat="@tools:sample/avatars[3]" />
 
             <TextView
-                android:id="@+id/weigth_text_view"
+                android:id="@+id/name_text_view"
                 android:layout_width="174dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
@@ -37,7 +37,20 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="Weigth"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/plant_age_text_view"
+                android:layout_width="174dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="Age"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
@@ -54,7 +67,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
-                android:id="@+id/age_text_view"
+                android:id="@+id/weigth_text_view"
                 android:layout_width="174dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
@@ -63,20 +76,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="age"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <TextView
-                android:id="@+id/name_text_view"
-                android:layout_width="174dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:gravity="center"
-                android:text="Name"
+                android:text="Weigth"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
