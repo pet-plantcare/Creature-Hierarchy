@@ -1,0 +1,101 @@
+//bottom_nav_menu.xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_addTask"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add Task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_gallery"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Gallery"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_backyard"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Backyard"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_help"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help"
+        app:showAsAction="ifRoom" />
+</menu>
+
+---------------------------------------------
+//activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white" />
+
+</RelativeLayout>
+------------------------------------------------------
+//MainActicity.java
+
+package com.example.navigationalbar;
+
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_addTask:
+                        Toast.makeText(MainActivity.this, "Add Task", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_gallery:
+                        Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_backyard:
+                        Toast.makeText(MainActivity.this, "Backyard", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_settings:
+                        Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_help:
+                        Toast.makeText(MainActivity.this, "Help", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+    }
+}
