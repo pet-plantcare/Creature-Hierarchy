@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">fb</string>
+    <array name="genres">
+        <item>Rock</item>
+        <item>Sufi</item>
+        <item>Pop</item> </array>
+
+</resources>
