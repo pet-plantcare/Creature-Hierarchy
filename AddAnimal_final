@@ -1,0 +1,96 @@
+package com.example.myapplication;
+
+import android.os.Bundle;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.View;
+import android.widget.Button;
+
+import creature.Bird;
+import creature.Cat;
+import creature.Dog;
+import creature.Fish;
+import creature.SamplePlant;
+
+public class AddAnimal extends AppCompatActivity {
+
+    DatabaseReference databaseReference;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_animal);
+
+        Button addDog = (Button) findViewById(R.id.adddog);
+        Button addCat = (Button) findViewById(R.id.addcat);
+        Button addFish = (Button) findViewById(R.id.addfish);
+        Button addBird= (Button) findViewById(R.id.addbird);
+        Button addPlant = (Button) findViewById(R.id.addPlant2);
+
+        addDog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dog dog = new Dog();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Dogs");
+                String id = databaseReference.push().getKey();
+                dog.setId(id);
+
+                databaseReference.child(id).setValue(dog);
+            }
+        });
+
+        addFish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fish fish = new Fish();
+                databaseReference = FirebaseDatabase.getInstance().getReference("All Fish");
+                String id = databaseReference.push().getKey();
+
+                fish.setId(id);
+                databaseReference.child(id).setValue(fish);
+            }
+        });
+        addBird.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bird bird = new Bird();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Birds");
+                String id = databaseReference.push().getKey();
+                bird.setId(id);
+
+                databaseReference.child(id).setValue(bird);
+            }
+        });
+        addPlant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SamplePlant samplePlant = new SamplePlant();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Plants");
+                String id = databaseReference.push().getKey();
+                samplePlant.setId(id);
+
+                databaseReference.child(id).setValue(samplePlant);
+            }
+        });
+        addCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Cat cat = new Cat();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Cats");
+                String id = databaseReference.push().getKey();
+                cat.setId(id);
+
+                databaseReference.child(id).setValue(cat);
+            }
+        });
+
+
+    }
+
+}
